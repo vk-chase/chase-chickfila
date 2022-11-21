@@ -7,7 +7,7 @@ qbcore chickfila job
 
 preview:
 
-soon.. 
+https://youtu.be/CmCsL8Sg9Wc
 
 --===========================================--
 
