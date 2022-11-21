@@ -202,8 +202,6 @@ RegisterNetEvent('bailey-chickfilajob:server:ChickNStrips', function()
     if buns ~= nil and slicedcheese ~= nil and slicedpickle ~= nil and choppedlettuce ~= nil and crispychicken ~= nil then
         Player.Functions.RemoveItem('slicedpickle', 1)
         TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["slicedpickle"], "remove")
-        Player.Functions.RemoveItem('buns', 1)
-        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["buns"], "remove")
         Player.Functions.RemoveItem('slicedcheese', 1)
         TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["slicedcheese"], "remove")
         Player.Functions.RemoveItem('choppedlettuce', 1)
@@ -254,10 +252,10 @@ end)
 RegisterNetEvent('bailey-chickfilajob:server:DasaniWater', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local co2 = Player.Functions.GetItemByName('co2')
+    local co2 = Player.Functions.GetItemByName('filterwater')
     if co2 ~= nil then
-        Player.Functions.RemoveItem('co2', 1)
-        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["co2"], "remove")
+        Player.Functions.RemoveItem('filterwater', 1)
+        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["filterwater"], "remove")
         Player.Functions.AddItem('dasaniwater', 1)
         TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["dasaniwater"], "add")
     else
@@ -268,10 +266,10 @@ end)
 RegisterNetEvent('bailey-chickfilajob:server:CocaCola', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local filterwater = Player.Functions.GetItemByName('filterwater')
+    local filterwater = Player.Functions.GetItemByName('co2')
     if filterwater ~= nil then
-        Player.Functions.RemoveItem('filterwater', 1)
-	TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["filterwater"], "remove")
+        Player.Functions.RemoveItem('co2', 1)
+	TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["co2"], "remove")
         Player.Functions.AddItem('cocacola', 1)
         TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["cocacola"], "add")
     else
@@ -362,7 +360,7 @@ RegisterNetEvent('bailey-chickfilajob:server:SliceTomato', function()
     if tomato ~= nil then
         Player.Functions.RemoveItem('tomato', 1)
         Player.Functions.AddItem('slicedtomatoes', randomoutput)
-        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["onion"], "remove")
+        TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["tomato"], "remove")
         TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items["slicedtomatoes"], "add")
     else
         TriggerClientEvent('QBCore:Notify', src, 'Missing Items Please check the menu required items!...', 'error')
