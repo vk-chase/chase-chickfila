@@ -65,7 +65,7 @@ RegisterNetEvent('bailey-chickfilajob:client:MenuCooking', function()
         },
         {
             header = "Chick-n-Strips x2",
-            txt = "Ingredients: <br>1x Crispy Chicken ",
+            txt = "Ingredients: <br>1x Sliced Cheese, <br>1x Chopped Lettuce, <br>1x Crispy Chicken <br>1x Sliced Pickle ",
             params = {
                 event = "bailey-chickfilajob:client:ChickNStrips",
             }
