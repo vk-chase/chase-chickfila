@@ -3,6 +3,7 @@ qbcore.target.fivem.mlo.notencluded
 
 qbcore chickfila job
 
+https://discord.gg/E82N7HXmZr 
 
 
 preview:
